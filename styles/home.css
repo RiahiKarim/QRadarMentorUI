@@ -1,0 +1,157 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+.particles {
+    height: 100%;
+    width: 100%;
+    background-color: #4178BE;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Grid {
+    margin : 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Grid-cell1 {
+  flex: 1;
+  position: relative;
+
+}
+.Grid-cell2 {
+  flex: 2;
+  position: relative;
+  align-self: center;
+}
+
+.appName{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.buffer {
+  height: 175px;
+  width: 20em;
+  float: right;
+}
+
+.layer {
+  fill: white;
+  -webkit-transition: all 21s ease-out;
+          transition: all 21s ease-out; }
+
+.loading .layer1 {
+  -webkit-animation: 4s linear 2;
+          animation: 4s linear 2;
+  -webkit-animation-name: cycle1;
+          animation-name: cycle1; }
+
+.loading .layer2 {
+  -webkit-animation: 4s linear 2;
+          animation: 4s linear 2;
+  -webkit-animation-name: cycle2;
+          animation-name: cycle2; }
+
+.loading .layer3 {
+  -webkit-animation: 4s linear 2;
+          animation: 4s linear 2;
+  -webkit-animation-name: cycle3;
+          animation-name: cycle3; }
+
+
+@-webkit-keyframes cycle1 {
+  0%, 65% {
+    fill: rgba(255, 255, 255, 0.49); }
+  75%, 82% {
+    fill: white; }
+  92%, 100% {
+    fill: rgba(255, 255, 255, 0.49); } }
+
+@keyframes cycle1 {
+  0%, 65% {
+    fill: rgba(255, 255, 255, 0.49); }
+  75%, 82% {
+    fill: white; }
+  92%, 100% {
+    fill: rgba(255, 255, 255, 0.49); } }
+
+@-webkit-keyframes cycle2 {
+  0%, 40% {
+    fill: rgba(255, 255, 255, 0.49); }
+  50%, 86% {
+    fill: white; }
+  96%, 100% {
+    fill: rgba(255, 255, 255, 0.49); } }
+
+@keyframes cycle2 {
+  0%, 40% {
+    fill: rgba(255, 255, 255, 0.49); }
+  50%, 86% {
+    fill: white; }
+  96%, 100% {
+    fill: rgba(255, 255, 255, 0.49); } }
+
+@-webkit-keyframes cycle3 {
+  0%, 15% {
+    fill: rgba(255, 255, 255, 0.49); }
+  25%, 90% {
+    fill: white; }
+  100% {
+    fill: rgba(255, 255, 255, 0.49); } }
+
+@keyframes cycle3 {
+  0%, 15% {
+    fill: rgba(255, 255, 255, 0.49); }
+  25%, 90% {
+    fill: white; }
+  100% {
+    fill: rgba(255, 255, 255, 0.49); } }

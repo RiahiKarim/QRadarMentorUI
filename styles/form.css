@@ -1,0 +1,215 @@
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+.display-flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+[class*="flex-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+[class*="flex-"]:first-child {
+  padding-left: 0;
+}
+
+[class*="flex-"]:nth-last-child(2) {
+  padding-right: 0;
+}
+.AddNewButton{
+  text-align: center;
+}
+.AddNewButton .btn{
+  float: none;
+  border: 2px dashed rgb(40, 96, 144);
+  background-color: transparent;
+  width: 100%;
+  color: rgb(40, 96, 144);
+  margin: 15px 0px;
+  padding:15px;
+}
+.AddNewProduct .btn{
+  float: none;
+  border: 2px dashed rgba(40, 144, 41, 0.76);;
+  background-color: transparent;
+  width: 100%;
+  color:rgba(40, 144, 41, 0.76);;
+  margin: 15px 0px;
+  padding:15px;
+}
+
+.repeatsection{
+  border: 1px dashed rgb(40, 96, 144);
+  background-color: transparent;
+  width: 100%;
+  color: rgb(40, 96, 144);
+  margin: 15px 0px;
+  padding:15px;
+}
+.myRow{
+  margin: 0px;
+}
+.flex-btn{
+  margin : auto;
+  padding:0px;
+}
+
+.pull-right a{
+  background: transparent;
+  border : none;
+}
+.grid {
+  height: auto;
+}
+/*.validation {*/
+/*color: #a94442;*/
+/*margin-top: -15px;*/
+/*margin-bottom: 15px;*/
+/*font-size: 11px;*/
+/*}*/
+
+.disable{
+  background-color: #a0a0a0 !important;
+}
+/*.ui-grid .ui-grid-render-container-body .ui-grid-viewport {*/
+/*overflow-x: auto !important;*/
+/*}*/
+/*.formly-field {*/
+  /*margin-bottom: 26px;*/
+/*}*/
+
+.error-messages {
+  position: relative;
+}
+
+.error-messages, .message {
+  opacity: 1;
+  transition: .3s linear all;
+}
+
+.message {
+  font-size: .8em;
+  position: absolute;
+  width: 100%;
+  color: #a94442;
+  margin-top: 2px;
+}
+
+.error-messages.ng-enter.ng-enter-active,
+.message.ng-enter.ng-enter-active {
+  opacity: 1;
+  top: 0;
+}
+
+.error-messages.ng-enter,
+.message.ng-enter {
+  opacity: 0;
+  top: -10px;
+}
+
+.error-messages.ng-leave,
+.message.ng-leave {
+  opacity: 1;
+  top: 0;
+}
+
+.error-messages.ng-leave-active,
+.message.ng-leave-active {
+  opacity: 0;
+  top: -10px;
+}
+
+.addProductBtn{
+  margin: 22px 0px 0px !important;
+}
+table.tableizer-table {
+  font-size: 12px;
+  border: 1px solid #CCC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tableizer-table td {
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid #CCC;
+}
+.tableizer-table th {
+  background-color: #104E8B;
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+.partNumbersHeader{
+  background-color: rgb(16, 78, 139);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+}
+.tableizer-firstrow{
+  border-bottom: 1px solid white;;
+}
+
+.partNumbersTable table{
+  margin: 10px auto;
+  width: 100%;
+}
+.partNumbersTable table td table{
+  height:100%;
+  margin:0px;
+}
+.partNumbersTable ul{
+  padding-left:20px;
+}
+td.table {
+  padding: 0px;
+  width: auto;
+}
+td.table td{
+  border: 0px none;
+}
+.partNumber{
+  width: 100px;
+}
+.form-area {
+  margin: 65px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-area .jumbotron{
+  background: #f6f8f9 url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgICAgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjI1cHgiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjUgMjUiPgogIDxnIG9wYWNpdHk9IjAuMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMUUxRTFDIj4KICAgIDxnIHN0cm9rZS13aWR0aD0iMC4yIj4KICAgICAgPGxpbmUgeDE9IjIuMTU1IiB5MT0iMCIgeDI9IjIuMTU1IiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIyLjE1NSIgeDI9IjI1IiB5Mj0iMi4xNTUiLz4KICAgIDwvZz4KICAgIDxnIHN0cm9rZS13aWR0aD0iMC4xIj4KICAgICAgPGxpbmUgeDE9IjIuMTU1IiB5MT0iMCIgeDI9IjIuMTU1IiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjEwLjQzMiIgeTE9IjAiIHgyPSIxMC40MzIiIHkyPSIyNSIvPgogICAgICA8bGluZSB4MT0iMTguNzA3IiB5MT0iMCIgeDI9IjE4LjcwNyIgeTI9IjI1Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iMjIuODQ1IiB4Mj0iMjUiIHkyPSIyMi44NDUiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIxNC41NjgiIHgyPSIyNSIgeTI9IjE0LjU2OCIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjYuMjkzIiB4Mj0iMjUiIHkyPSI2LjI5MyIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjE4LjcwNyIgeDI9IjI1IiB5Mj0iMTguNzA3Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iMTAuNDMyIiB4Mj0iMjUiIHkyPSIxMC40MzIiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIyLjE1NSIgeDI9IjI1IiB5Mj0iMi4xNTUiLz4KICAgICAgPGxpbmUgeDE9IjYuMjkzIiB5MT0iMCIgeDI9IjYuMjkzIiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjE0LjU2OCIgeTE9IjAiIHgyPSIxNC41NjgiIHkyPSIyNSIvPgogICAgICA8bGluZSB4MT0iMjIuODQ1IiB5MT0iMCIgeDI9IjIyLjg0NSIgeTI9IjI1Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K') -3px -3px;
+}
+.form-area .panel-heading{
+  background: #f6f8f9 url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgICAgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjI1cHgiIHZpZXdCb3g9IjAgMCAyNSAyNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjUgMjUiPgogIDxnIG9wYWNpdHk9IjAuMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMUUxRTFDIj4KICAgIDxnIHN0cm9rZS13aWR0aD0iMC4yIj4KICAgICAgPGxpbmUgeDE9IjIuMTU1IiB5MT0iMCIgeDI9IjIuMTU1IiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIyLjE1NSIgeDI9IjI1IiB5Mj0iMi4xNTUiLz4KICAgIDwvZz4KICAgIDxnIHN0cm9rZS13aWR0aD0iMC4xIj4KICAgICAgPGxpbmUgeDE9IjIuMTU1IiB5MT0iMCIgeDI9IjIuMTU1IiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjEwLjQzMiIgeTE9IjAiIHgyPSIxMC40MzIiIHkyPSIyNSIvPgogICAgICA8bGluZSB4MT0iMTguNzA3IiB5MT0iMCIgeDI9IjE4LjcwNyIgeTI9IjI1Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iMjIuODQ1IiB4Mj0iMjUiIHkyPSIyMi44NDUiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIxNC41NjgiIHgyPSIyNSIgeTI9IjE0LjU2OCIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjYuMjkzIiB4Mj0iMjUiIHkyPSI2LjI5MyIvPgogICAgICA8bGluZSB4MT0iMCIgeTE9IjE4LjcwNyIgeDI9IjI1IiB5Mj0iMTguNzA3Ii8+CiAgICAgIDxsaW5lIHgxPSIwIiB5MT0iMTAuNDMyIiB4Mj0iMjUiIHkyPSIxMC40MzIiLz4KICAgICAgPGxpbmUgeDE9IjAiIHkxPSIyLjE1NSIgeDI9IjI1IiB5Mj0iMi4xNTUiLz4KICAgICAgPGxpbmUgeDE9IjYuMjkzIiB5MT0iMCIgeDI9IjYuMjkzIiB5Mj0iMjUiLz4KICAgICAgPGxpbmUgeDE9IjE0LjU2OCIgeTE9IjAiIHgyPSIxNC41NjgiIHkyPSIyNSIvPgogICAgICA8bGluZSB4MT0iMjIuODQ1IiB5MT0iMCIgeDI9IjIyLjg0NSIgeTI9IjI1Ii8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K') -3px -3px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.form-area .control-label{
+  color: rgb(65, 120, 190);
+  font-weight: 800;
+}
