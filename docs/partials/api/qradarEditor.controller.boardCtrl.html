@@ -1,0 +1,42 @@
+<h1><code ng:non-bindable="">boardCtrl</code>
+<div><span class="hint">controller in module <code ng:non-bindable="">qradarEditor</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="qradareditor-controller-page qradareditor-controller-boardctrl-page"><p>This is the board controller, it contain  the business logic needed for the graphical view.</p>
+<pre class="prettyprint linenums">
+    &lt;div ng-controller="boardCtrl"&gt;&lt;/div&gt;
+</pre>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_createlink">createLink(sourceId, targetId)</h3>
+<div class="createlink"><div class="createlink-page"><p>Add target component into source component links.</p>
+</div><h5 id="methods_createlink_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>sourceId</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="createlink-page"><p>Id of the source component.</p>
+</div></td></tr><tr><td>targetId</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="createlink-page"><p>Id of the target component.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_handledrop">handleDrop(component, board, event)</h3>
+<div class="handledrop"><div class="handledrop-page"><p>Handle dropped item into the graphic area.</p>
+</div><h5 id="methods_handledrop_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>component</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="handledrop-page"><p>The dropped component.</p>
+</div></td></tr><tr><td>board</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="handledrop-page"><p>The graphic area.</p>
+</div></td></tr><tr><td>event</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="handledrop-page"><p>The drop event, useful to catch the mouse position.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_onopendetail">onOpenDetail()</h3>
+<div class="onopendetail"><div class="onopendetail-page"><p>Method invoked when the user want to edit the component details.</p>
+</div></div>
+</li>
+<li><h3 id="methods_onremove">onRemove()</h3>
+<div class="onremove"><div class="onremove-page"><p>Method invoked when node or link is removed from the board. it removes the element from the $scope.</p>
+</div></div>
+</li>
+<li><h3 id="methods_removelink">removeLink(sourceId, targetId)</h3>
+<div class="removelink"><div class="removelink-page"><p>Remove target component from source component links.</p>
+</div><h5 id="methods_removelink_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>sourceId</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="removelink-page"><p>Id of the source component.</p>
+</div></td></tr><tr><td>targetId</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="removelink-page"><p>Id of the target component.</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

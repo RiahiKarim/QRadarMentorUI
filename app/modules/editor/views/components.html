@@ -1,0 +1,18 @@
+<div class="heading">
+  Produits {{vm.selectedFamily.name}}
+  <span class="up" ng-class="isCollapsed ? 'down' : 'up'" ng-click="isCollapsed = !isCollapsed" ></span>
+</div>
+<div class="body" uib-collapse="isCollapsed" >
+  <ul>
+    <li ng-repeat="component in components" class=""
+        id="component-{{ $index }}"
+        data-occurence="{{component.occurence}}"
+        data-type="{{ component.name }}"
+        data-logo="{{ component.logo }}"
+        draggable=""
+        linkedTo="{{ component.linkedTo }}">
+      <i class="fa fa-arrows" aria-hidden="true"></i>
+      {{ component.name }}
+    </li>
+  </ul>
+</div>

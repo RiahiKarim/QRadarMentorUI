@@ -1,0 +1,40 @@
+{
+  "name": "qradar",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "1.5.5",
+    "bootstrap": "3.3.6",
+    "angular-animate": "1.5.5",
+    "angular-messages": "1.5.5",
+    "angular-route": "1.5.5",
+    "underscore": "1.8.3",
+    "angular-bootstrap": "1.3.2",
+    "particles.js": "2.0.0",
+    "angular-formly": "8.2.0",
+    "angular-formly-templates-bootstrap": "6.3.2",
+    "api-check": "7.5.5",
+    "angular-ui-grid": "3.1.1",
+    "checklist-model": "^0.9.0",
+    "ng-scrollbars": "^0.0.10",
+    "angular-loading-bar": "0.9.0",
+    "angular-toastr": "^1.7.0",
+    "angular-pageslide-directive": "^1.1.1",
+    "lodash": "3.10.1",
+    "backbone": "1.2.1",
+    "jquery": "2.0.3",
+    "jointjs": "0.9.7",
+    "toolbar": "git://github.com/paulkinzett/toolbar.git#6ba6e2a"
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "moduleName": "qradarApp",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  }
+}
