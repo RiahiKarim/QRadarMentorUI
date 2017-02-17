@@ -1,0 +1,82 @@
+<div>
+  <div class="partNumbers-tooolbox">
+    <button ng-click="vm.pageSlideOpen =false" class="bounce">
+      <i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <div class="container partNumbersTable">
+    <div class="col-md-6">
+      <table class="tableizer-table">
+        <thead>
+        <tr class="tableizer-firstrow">
+          <th colspan="3">Part Nnumbers Composants</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Identifiant</td>
+          <td>Modèle</td>
+          <td class="table">
+            <table>
+              <tr>
+                <td class="partNumber">#</td>
+                <td>Description</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr ng-repeat="component in vm.components">
+          <td>{{component.name}}</td>
+          <td>{{component.range.name}}</td>
+          <td class="table">
+            <table>
+              <tr ng-repeat="partNumberObject in component.partNumbers.product">
+                <td class="partNumber">{{partNumberObject.partNumber}}</td>
+                <td>{{ partNumberObject.core != '' || partNumberObject.app != '' ? partNumberObject.core +
+                  partNumberObject.app : component.range.name }} {{partNumberObject.support}}
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+      <table class="tableizer-table">
+        <thead>
+        <tr class="tableizer-firstrow">
+          <th colspan="3">Part Numbers Capacity Increase</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Identifiant</td>
+          <td>Modèle</td>
+          <td class="table">
+            <table>
+              <tr>
+                <td class="partNumber">#</td>
+                <td>Description</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr  ng-repeat="component in vm.components" ng-if="component.partNumbers.capacityIncrease.length !=0">
+          <td>{{component.name}}</td>
+          <td>{{component.range.name}}</td>
+          <td class="table">
+            <table>
+              <tr  ng-repeat="formatedCapacityIncrease in component.partNumbers.formatedCapacityIncreases">
+                <td class="partNumber">{{formatedCapacityIncrease.times + ' x '}}{{formatedCapacityIncrease.capacityIncrease.partNumber}}</td>
+                <td>{{formatedCapacityIncrease.capacityIncrease.start !='0' && formatedCapacityIncrease.capacityIncrease.to !='0' ? 'De '+ formatedCapacityIncrease.capacityIncrease.start+' A ' + formatedCapacityIncrease.capacityIncrease.to : '+'+formatedCapacityIncrease.capacityIncrease.step}} {{formatedCapacityIncrease.capacityIncrease.property}} {{formatedCapacityIncrease.capacityIncrease.support}}</td>
+              </tr>
+            </table>
+          </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div>
+  <!--loop through each element in product array-->
+    <div class="repeatsection"
+         ng-repeat="product in model[options.key]"
+         ng-init="fields = copyFields(to.fields)"
+    >
+      <div>
+        <formly-form fields="fields" class="col-md-12"
+                     model="product"
+                     form="form">
+        </formly-form>
+        <div class="row" style="margin: 0px;">
+          <button type="button" class="btn btn-sm btn-danger btn-xs glyphicon glyphicon-trash" ng-click="removeProduct($index)"></button>
+        </div>
+      </div>
+    </div>
+
+    <p class="AddNewProduct">
+      <button type="button" class="btn btn-primary" ng-click="addProduct()" >{{to.btnText}}</button>
+    </p>
+</div>

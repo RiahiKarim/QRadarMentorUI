@@ -1,0 +1,66 @@
+<!--<div>-->
+
+    <!--<div class="repeatsection"-->
+         <!--ng-repeat="site in model[options.key]"-->
+         <!--ng-init="fields = copyFields(to.fields)"-->
+         <!--&gt;-->
+
+      <!--<div> <h4>Site {{$index}} :</h4></div>-->
+      <!--<div>-->
+        <!--<formly-form fields="fields" class="col-md-12"-->
+                     <!--model="site"-->
+                     <!--form="form"-->
+        <!--&gt;-->
+        <!--</formly-form>-->
+        <!--<div class="row" style="margin: 0px;">-->
+          <!--<button type="button" class="btn btn-sm btn-danger btn-xs glyphicon glyphicon-trash" ng-click="removeSite($index)"></button>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+    <!--<p class="AddNewButton">-->
+      <!--<button type="button" class="btn btn-primary" ng-click="addSite()" >{{to.btnText}}</button>-->
+    <!--</p>-->
+
+<!--</div>-->
+
+<div class="panel-group" id="accordion">
+
+  <div class="panel panel-default"
+       ng-repeat="site in model[options.key]"
+       ng-init="fields = copyFields(to.fields)">
+
+
+    <div class="panel-heading">
+      <span class="panel-title">
+        <!--<a data-toggle="collapse" data-parent="#accordion" href="" data-target="#collapse{{$index}}">-->
+          Site {{$index+1}} :
+        <!--</a>-->
+      </span>
+      <div class="btn-group pull-right"  >
+        <a ng-click="isCollapsed = !isCollapsed" class="btn btn-default btn-xs">
+          <span ng-class="{'glyphicon glyphicon-menu-down': isCollapsed,'glyphicon glyphicon-menu-up': !isCollapsed}" ></span>
+        </a>
+        <a ng-click="removeSite($index)" class="btn btn-default btn-xs" tooltip-placement="bottom" uib-tooltip="Supprimer ce site">
+          <span class="glyphicon glyphicon-trash"></span>
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div id="collapse{{$index}}" class="panel-collapse collapse in">
+      <div class="panel-body" uib-collapse="isCollapsed">
+        <div>
+          <formly-form fields="fields" class="col-md-12"
+                       model="site"
+                       form="form">
+          </formly-form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="AddNewButton">
+  <button type="button" class="btn btn-primary" ng-click="addSite()" >{{to.btnText}}</button>
+  </p>
+
+</div>

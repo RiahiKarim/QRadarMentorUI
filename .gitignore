@@ -24,7 +24,6 @@ typings
 
 # Ignore dist, since code will have to be rebuilt on
 # every deploy
-dist
 
 
 ################################################
