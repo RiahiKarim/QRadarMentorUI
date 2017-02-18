@@ -8,16 +8,18 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.min.css" />
-  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" />
-  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" />
-  <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.min.css" />
-  <link rel="stylesheet" href="bower_components/jointjs/dist/joint.min.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+  <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+  <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+  <link rel="stylesheet" href="bower_components/jointjs/dist/joint.css" />
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog.css" />
+  <link rel="stylesheet" href="bower_components/ng-dialog/css/ngDialog-theme-default.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="bower_components/toolbar/jquery.toolbar.css" />
+  <!--<link rel="stylesheet" href="bower_components/toolbar/jquery.toolbar.css" />-->
   <link rel="stylesheet" href="styles/editor.css">
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/form.css">
@@ -31,37 +33,39 @@
 
 <!-- build:js(.) modules/vendor.js -->
 <!-- bower:js -->
-<script src="bower_components/jquery/jquery.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-<script src="bower_components/angular-messages/angular-messages.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
-<script src="bower_components/underscore/underscore-min.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src="bower_components/particles.js/particles.min.js"></script>
-<script src="bower_components/api-check/dist/api-check.min.js"></script>
-<script src="bower_components/angular-formly/dist/formly.min.js"></script>
-<script src="bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>
-<script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/particles.js/particles.js"></script>
+<script src="bower_components/api-check/dist/api-check.js"></script>
+<script src="bower_components/angular-formly/dist/formly.js"></script>
+<script src="bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+<script src="bower_components/angular-ui-grid/ui-grid.js"></script>
 <script src="bower_components/checklist-model/checklist-model.js"></script>
-<script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-<script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 <script src="bower_components/ng-scrollbars/dist/scrollbars.min.js"></script>
-<script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
-<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.min.js"></script>
-<script src="bower_components/angular-pageslide-directive/dist/angular-pageslide-directive.min.js"></script>
-<script src="bower_components/lodash/lodash.min.js"></script>
-<script src="bower_components/backbone/backbone-min.js"></script>
-<script src="bower_components/graphlib/dist/graphlib.core.min.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="bower_components/angular-pageslide-directive/dist/angular-pageslide-directive.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/backbone/backbone.js"></script>
+<script src="bower_components/graphlib/dist/graphlib.core.js"></script>
+<script src="bower_components/dagre/dist/dagre.core.js"></script>
 <script src="bower_components/dagre/dist/dagre.core.min.js"></script>
-<script src="bower_components/jointjs/dist/joint.min.js"></script>
+<script src="bower_components/jointjs/dist/joint.js"></script>
+<script src="bower_components/ng-dialog/js/ngDialog.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) modules/modules.js -->
 <!--Vendors-->
-<script src="bower_components/toolbar/jquery.toolbar.js"></script>
+<!--<script src="bower_components/toolbar/jquery.toolbar.js"></script>-->
 <!-- Bootstrapping -->
 <script src="modules/app.module.js"></script>
 <script src="modules/shared/servcies/partNumberService.js"></script>
