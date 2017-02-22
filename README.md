@@ -3,7 +3,7 @@ QRadar Mentor is a web based platform that facilitate the configuration of a QRa
 
 The first capability of the tool is to Configure a QRadar Solution either through the guide which is a dynamic form or through the graphic editor. The final goal is to provide a single way to configure QRadar solutions around the globe, regardless of the solution size, deployment model, complexity, etc...
 
-[Read More, specifications & architecture](https://drive.google.com/open?id=0BzKDRqxv_pyOekh2NXZLZDVKMEE)
+[Read More, specifications & architecture](https://drive.google.com/open?id=0BzKDRqxv_pyOQ0x0V2tlbVVXNGs)
 
 ## Usage
 #### [VIDEO DEMO](https://youtu.be/J0trXfhPM6k)
