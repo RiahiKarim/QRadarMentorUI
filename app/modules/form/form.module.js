@@ -66,7 +66,7 @@ angular
 
   .run(function run(formlyConfig,formlyValidationMessages) {
     formlyConfig.extras.errorExistsAndShouldBeVisibleExpression = 'fc.$touched || form.$submitted';
-    formlyValidationMessages.addStringMessage('required', 'ce champ est obligatoire');
+    formlyValidationMessages.addStringMessage('required', 'Required field');
     formlyValidationMessages.addStringMessage('min', 'should be greater than 0');
     formlyValidationMessages.addStringMessage('number', 'Invalid Input');
     formlyValidationMessages.addTemplateOptionValueMessage('max', 'max', 'The max value allowed is', '', 'Too big');

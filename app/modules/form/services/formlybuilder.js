@@ -29,7 +29,7 @@ function formlyBuilder(familyManager, productManager, configService) {
           key: 'family',
           type: 'select',
           templateOptions: {
-            label: 'Famille',
+            label: 'Choose a Family of products',
             options: [],
             ngOptions: 'family as family.name for family in to.options',
             required: true,
@@ -60,7 +60,7 @@ function formlyBuilder(familyManager, productManager, configService) {
           key: 'deploymentMode',
           type: 'select',
           templateOptions: {
-            label: 'Mode de deploiement',
+            label: 'Choose a deployement mode',
             options: [],
             ngOptions: 'dm as dm.name for dm in to.options',
             required: true,
@@ -98,7 +98,7 @@ function formlyBuilder(familyManager, productManager, configService) {
           wrapper: "panel",
           defaultValue: [{}],
           templateOptions: {
-            btnText: 'Ajouter un nouveau site',
+            btnText: 'Add a new site',
             required: true,
             label: 'sites',
             fields: [
@@ -115,7 +115,7 @@ function formlyBuilder(familyManager, productManager, configService) {
                     key: 'product',
                     type: 'select',
                     templateOptions: {
-                      label: 'Composant :',
+                      label: 'Component :',
                       options: [],
                       ngOptions: 'product as product.name for product in to.options | filter:{ occurence : "!0"  }',
                       onChange: function (product, fieldModel, scope) {
@@ -142,7 +142,7 @@ function formlyBuilder(familyManager, productManager, configService) {
                     key: 'range',
                     type: 'select',
                     templateOptions: {
-                      label: 'Modéle :',
+                      label: 'Model :',
                       options: [],
                       ngOptions: 'range as range.name group by range.type for range in to.options',
                       onChange: function (selectedRange, viewModel, scope) {
@@ -157,9 +157,9 @@ function formlyBuilder(familyManager, productManager, configService) {
                                   key: property,
                                   type: 'input',
                                   templateOptions: {
-                                    label: property + ' (traité) :',
+                                    label: property,
                                     type: 'number',
-                                    placeholder: 'Max ' + selectedRange.maxCapacity[property],
+                                    placeholder: 'Max ' + angular.isDefined(selectedRange.maxCapacity[property]) ? selectedRange.maxCapacity[property]: "",
                                     min : 0 ,
                                     max: selectedRange.maxCapacity[property]
                                   }

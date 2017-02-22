@@ -38,7 +38,7 @@ function MainCtrl($scope, formlyBuilder, configService,toastr) {
           vm.error = "";
         }
         else
-          toastr.info('Le mode de deploiement ne supporte pas la capcité requise');
+          toastr.info('The selected deployment mode can not support the required capacities');
 
       }
     }
