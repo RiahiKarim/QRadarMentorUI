@@ -22,7 +22,7 @@ III.Run the client
 4. Run `grunt serve` for preview and run a live reload server on http://localhost:9000 .
 
 ### Contribute
-This project is under free license. If you want to contribute to the project you can simply fork this repo and make a Pull Request. To build a minified version, you can simply run the grunt task `grunt build`. The minified/uglified files are created in the `dist` folder.
+This project is under free license. If you want to contribute to the project you can simply fork this repo and make a Pull Request. To build a minified version, you can simply run the grunt task `grunt build`. The minified/uglified files are created in the [dist](https://github.com/RiahiKarim/QRadarMentorUI/tree/master/dist) folder.
 
 ### Documentation
 This project project uses a form of [jsdoc](http://usejsdoc.org/) for all of its documentation.
