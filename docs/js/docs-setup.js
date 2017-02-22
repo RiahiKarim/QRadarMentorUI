@@ -68,6 +68,15 @@ NG_DOCS={
     },
     {
       "section": "api",
+      "id": "qradarEditor.controller:maintenanceModalCtrl",
+      "shortName": "maintenanceModalCtrl",
+      "type": "controller",
+      "moduleName": "qradarEditor",
+      "shortDescription": "",
+      "keywords": "api controller maintenacemodalctrl ng-controller qradareditor"
+    },
+    {
+      "section": "api",
       "id": "qradarEditor.directive:draggable",
       "shortName": "draggable",
       "type": "directive",
