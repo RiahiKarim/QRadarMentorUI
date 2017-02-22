@@ -28,6 +28,7 @@ Install bower dependencies:
 ```shell
 $ bower install
 ```
+(Choose angular#1.5.5)
 
 This next step will be the only one you will use from now-on:
 
