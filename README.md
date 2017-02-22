@@ -1,25 +1,41 @@
 # QRadar Mentor
+QRadar Mentor is a web based platform that facilitate the configuration of a QRadar solution (IBM Security Solution).
+The first capability of the tool is to Configure a QRadar Solution either through the guide which is a dynamic form or through the graphic editor. The final goal is to provide a single way to configure QRadar solutions around the globe, regardless of the solution size, deployment model, complexity, etc...
+#### [Try the DEMO](http://qradarmentor.mybluemix.net/)
 
-## Build & development
+## Build & Development
+### Setup
 
-I.Run the database
-==================
+Fork and clone the repo. 
+```shell
+$ git clone https://github.com/RiahiKarim/QRadarMentorUI.git
+```
 
+`cd` into it and install npm dependencies:
 
-II.Run the API
-=============
+```shell
+$ cd QRadarMentorUI
+$ npm install
+```
 
+Install grunt-cli:
 
+```shell
+$ npm install -g grunt-cli
+```
+Install bower dependencies:
 
-III.Run the client
-==================
-1. Install the NodeJS dependencies: npm install .
+```shell
+$ bower install
+```
 
-2. Install the Bower dependencies: bower install .
+This next step will be the only one you will use from now-on:
 
-3.Change the bachEnd.url constant in modules.module.js to target your entry point of the api.
+```shell
+$ grunt serve
+```
 
-4. Run `grunt serve` for preview and run a live reload server on http://localhost:9000 .
+This will rebuild the site in dev mode (scripts are not minified etc.) and will start the application. You can access the site on `localhost:9000`.
 
 ### Contribute
 This project is under free license. If you want to contribute to the project you can simply fork this repo and make a Pull Request. To build a minified version, you can simply run the grunt task `grunt build`. The minified/uglified files are created in the [dist](https://github.com/RiahiKarim/QRadarMentorUI/tree/master/dist) folder.
