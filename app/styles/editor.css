@@ -421,7 +421,7 @@ form .error {
 }
 
 .palette .body li:hover {
-  cursor: move;
+  cursor: pointer;;
   border-color: #3098d8;
   background: white;
   color: #3098d8;
@@ -668,4 +668,8 @@ form .error {
 
 .select-style select:focus {
   outline: none;
+}
+.palette .heading{
+  font-weight: bold;
+  font-size: 13px;
 }
