@@ -1,10 +1,12 @@
 # QRadar Mentor
 QRadar Mentor is a web based platform that facilitate the configuration of a QRadar solution (IBM Security Solution).
+
 The first capability of the tool is to Configure a QRadar Solution either through the guide which is a dynamic form or through the graphic editor. The final goal is to provide a single way to configure QRadar solutions around the globe, regardless of the solution size, deployment model, complexity, etc...
+
 ## Usage
-#### [Try the DEMO](http://qradarmentor.mybluemix.net/)
-#### [PPT DEMO](http://qradarmentor.mybluemix.net/)
 #### [VIDEO DEMO](http://qradarmentor.mybluemix.net/)
+#### [PPT DEMO](http://qradarmentor.mybluemix.net/)
+#### [Try the DEMO Yourself](http://qradarmentor.mybluemix.net/)
 
 
 ## Build & Development
