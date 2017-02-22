@@ -23,7 +23,7 @@
       </div>
       <div class="nav navbar-nav navbar-right">
         <button type="button" class="btn btn-default navbar-btn" ng-click="vm.validateConfig()">
-          <i class="fa fa-check-square-o" aria-hidden="true"></i> Valider ma configuration
+          <i class="fa fa-check-square-o" aria-hidden="true"></i> Validate my configuration
         </button>
          <button id="toolbar" type="button" class="btn btn-default navbar-btn" style="padding-top: 1px;padding-bottom: 1px;">
             <i class="fa fa-question-circle fa-2x" aria-hidden="true"></i>
@@ -37,7 +37,6 @@
 <div class="row">
   <div class="" ng-class="{'col-md-9': check, 'col-md-12': !check}">
     <div class="jumbotron">
-      <!--<div class="alert alert-warning" role="alert" >{{vm.error}}</div>-->
       <form novalidate ng-submit="vm.onSubmit()">
         <formly-form model="vm.model" fields="vm.fields" options="vm.options" form="vm.form">
           <button type="button" class="btn btn-default" ng-click="vm.options.resetModel()">Reset</button>
