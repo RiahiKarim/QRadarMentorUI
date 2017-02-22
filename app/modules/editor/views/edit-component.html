@@ -10,7 +10,7 @@
     </div>
     <!--Range-->
     <div class="form-field form-group">
-      <label for="range" class="col-sm-3 control-label">Modèle : </label>
+      <label for="range" class="col-sm-3 control-label">Model : </label>
 
       <div class="col-sm-9">
         <select required id="range" class="form-control"
@@ -34,11 +34,12 @@
                ng-model="values.choosenCapacity[property]"
         />
         {{ detailForm.field_$index.$error}}
-        <span class="info-messages" ng-show="values.choosenCapacity[property] < values.range.initCapacity[property]">Le modèle {{values.range.name}} posséde une capacité initiale de {{values.range.initCapacity[property]}} {{property}}</span>
-        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.required">Ce champ est obligatoire.</span>
-        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.number">Veuillez saisir un entier</span>
-        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.min" >Valeur non vallide</span>
-        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.max">Le modèle {{values.range.name}} ne peut pas supporter plus de  {{values.range.maxCapacity[property]}} {{property}}</span>
+        <span class="info-messages" ng-show="values.choosenCapacity[property] < values.range.initCapacity[property]">The model {{values.range.name}} has an initial capacity of {{values.range.initCapacity[property]}} {{property}}</span>
+        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.required">Required field.</span>
+        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.number">Please enter an Integer</span>
+        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.min" >Invalid value</span>
+        <span class="error-messages" ng-show="detailForm.field_{{ $index }}.$error.max">The model {{values.range.name}} 
+        Can not support more than  {{values.range.maxCapacity[property]}} {{property}}</span>
       </div>
     </div>
     <!-- Support Options-->
@@ -49,13 +50,6 @@
           <input type="checkbox" checklist-model="values.supportOptions" checklist-value="option" ng-disabled="hasPrequisite(option.prerequisite)" ng-change="uncheck(option, checked)"> {{option.name}}
         </label>
       </div>
-
-      <!--<label for="options" class="col-sm-3 control-label">Support options</label>-->
-
-      <!--<div class="col-sm-9">-->
-      <!--<select id="options" class="form-control" ng-model="values.supportOptions" multiple ng-multiple="true"-->
-              <!--ng-options="option.name for option in fields.supportOptions"></select>-->
-    <!--</div>-->
     </div>
   </form>
 

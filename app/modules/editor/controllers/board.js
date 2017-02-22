@@ -198,7 +198,7 @@ function boardCtrl($scope, $uibModal, $window, selectedComponents, componentFetc
         count++;
     });
     if (!isNaN(occurence) && count >= occurence) {
-      toastr.info('Vous ne pouvez plus ajouter de '+ type, 'Information :');
+      toastr.info('No more '+ type + ' component can be added', 'Information :');
     } else {
       node = new jointElement.createElement({
         position: {x: X, y: Y},

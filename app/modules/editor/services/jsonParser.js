@@ -21,7 +21,7 @@ angular
         //check the element that must be connected to another one
         if(component.linkedTo.length !=0){
           if(component.links.length==0){
-            toastr.warning(component.name+' doit être lié avec :'+toString(_.uniq(component.linkedTo)), 'Warning');
+            toastr.warning('The ' + component.name+ ' component must be connected to :'+toString(_.uniq(component.linkedTo)), 'Warning');
             valide = false;
           }
         }

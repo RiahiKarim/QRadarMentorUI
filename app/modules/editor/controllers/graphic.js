@@ -26,7 +26,7 @@ function graphic(backEnd, $http, $scope, selectedComponents, partNumberService, 
   vm.famiyChanged = function (newFamily, oldFamily) {
 
     if (!angular.equals({}, vm.components))
-      if (confirm("Tous les éléments présents dans le graphe seront supprimés."))
+      if (confirm("All the components in the current configuration will be deleted."))
         $scope.$broadcast('familyChanged', {"family": newFamily});
       else {
         vm.selectedFamily = angular.fromJson(oldFamily);
@@ -73,7 +73,9 @@ function graphic(backEnd, $http, $scope, selectedComponents, partNumberService, 
     $http.get(backEnd.url + 'family/all')
       .success(function (families) {
         vm.families = families;
-        vm.selectedFamily = vm.families[0];
+        vm.selectedFamily = _.find(vm.families, {name : "SIEM"});
+        if(angular.isUndefined( vm.selectedFamily)) vm.selectedFamily = _.find(vm.families, {name : "Log Manager"});
+         if(angular.isUndefined( vm.selectedFamily)) vm.selectedFamily = vm.families[0];
       });
     $http.get(backEnd.url + 'maintenanceOption/all')
       .success(function (maintenanceOptions) {
