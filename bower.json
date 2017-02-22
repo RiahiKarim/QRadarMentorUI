@@ -22,8 +22,7 @@
     "lodash": "3.10.1",
     "backbone": "1.2.1",
     "jquery": "2.0.3",
-    "jointjs": "0.9.7",
-    "ng-dialog": "1.0.0"
+    "jointjs": "0.9.7"
   },
   "devDependencies": {},
   "appPath": "app",
