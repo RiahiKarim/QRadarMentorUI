@@ -38,6 +38,17 @@ $ grunt serve
 
 This will rebuild the site in dev mode (scripts are not minified etc.) and will start the application. You can access the site on `localhost:9000`.
 
+####Note : 
+The commands above will run locally only the front-end part of QRadar Mentor and consume a backend API deployed in the Bluemix cloud.
+To build and start your own Backend API follow the instructons in this [repo]((https://github.com/RiahiKarim/QRadarMentor.API)), then you need to cange the bachEnd.url constant in [modules.module.js](https://github.com/RiahiKarim/QRadarMentorUI/blob/master/app/modules/app.module.js) to target your entry point of your backend API.
+```javascript
+...
+}).constant("backEnd", {
+   "url": "Your Backend API endpoint"
+})
+...
+```
+
 ### Contribute
 This project is under free license. If you want to contribute to the project you can simply fork this repo and make a Pull Request. To build a minified version, you can simply run the grunt task `grunt build`. The minified/uglified files are created in the [dist](https://github.com/RiahiKarim/QRadarMentorUI/tree/master/dist) folder.
 
