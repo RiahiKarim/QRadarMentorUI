@@ -1,10 +1,12 @@
 # QRadar Mentor
 QRadar Mentor is a web based platform that facilitate the configuration of a QRadar solution (IBM Security Solution).
+
 The first capability of the tool is to Configure a QRadar Solution either through the guide which is a dynamic form or through the graphic editor. The final goal is to provide a single way to configure QRadar solutions around the globe, regardless of the solution size, deployment model, complexity, etc...
+
 ## Usage
-#### [Try the DEMO](http://qradarmentor.mybluemix.net/)
-#### [PPT DEMO](http://qradarmentor.mybluemix.net/)
 #### [VIDEO DEMO](http://qradarmentor.mybluemix.net/)
+#### [PPT DEMO](http://qradarmentor.mybluemix.net/)
+#### [Try the DEMO Yourself](http://qradarmentor.mybluemix.net/)
 
 
 ## Build & Development
@@ -42,7 +44,7 @@ $ grunt serve
 
 This will rebuild the site in dev mode (scripts are not minified etc.) and will start the application. You can access the site on `localhost:9000`.
 
-####Note : 
+####Note : [Backend API](https://github.com/RiahiKarim/QRadarMentor.API)
 The commands above will run locally only the front-end part of QRadar Mentor and consume a backend API deployed in the IBM Cloud Bluemix.
 To build and start your own Backend API follow the instructons in this [repo](https://github.com/RiahiKarim/QRadarMentor.API), then you need to update the backEnd.url constant in [modules.module.js](https://github.com/RiahiKarim/QRadarMentorUI/blob/master/app/modules/app.module.js) to target the entry point of your backend API.
 ```javascript
