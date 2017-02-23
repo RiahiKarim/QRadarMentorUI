@@ -7,7 +7,7 @@ The first capability of the tool is to Configure a QRadar Solution either throug
 
 ## Usage
 #### [VIDEO DEMO](https://youtu.be/J0trXfhPM6k)
-#### [Slide Presentations](https://drive.google.com/open?id=0BzKDRqxv_pyOLV9NMFdyRVJoMGM)
+#### [Slide Presentations](https://drive.google.com/open?id=0BzKDRqxv_pyOY2tjSWIxWGZEcWc)
 #### [Try the DEMO Yourself](http://qradarmentor.mybluemix.net/)
 
 
